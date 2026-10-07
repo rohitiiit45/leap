@@ -1,0 +1,2 @@
+import Navbar from "../../components/Navbar"; import Footer from "../../components/Footer";
+export default function DashboardLayout({eyebrow,title,subtitle,children}){return <><Navbar/><main className="page min-h-[75vh] pb-12"><div className="py-8"><p className="eyebrow">{eyebrow}</p><h1 className="display mt-2 text-4xl text-slate-950 sm:text-5xl">{title}</h1><p className="mt-2 text-slate-500">{subtitle}</p></div>{children}</main><Footer/></>}

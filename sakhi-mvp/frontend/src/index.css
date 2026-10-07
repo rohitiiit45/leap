@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Figtree', system-ui, sans-serif; color: #222; background: #fff; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+::selection { background: #ffc2cc; }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+@layer components {
+  .page { @apply mx-auto w-full max-w-[1440px] px-5 sm:px-10; }
+  .card { @apply rounded-2xl border border-gray-200 bg-white shadow-soft; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-sakhi-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sakhi-600 active:scale-[.98] disabled:opacity-50; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-gray-900 bg-white px-5 py-3 text-sm font-semibold text-gray-900 transition hover:bg-gray-50 disabled:opacity-50; }
+  .input { @apply w-full rounded-lg border border-gray-300 bg-white px-3.5 py-3 text-sm outline-none transition focus:border-gray-900 focus:ring-1 focus:ring-gray-900; }
+  .eyebrow { @apply text-sm font-semibold text-sakhi-600; }
+  .display { @apply font-extrabold tracking-tight; }
+}
